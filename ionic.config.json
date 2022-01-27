@@ -1,0 +1,8 @@
+{
+  "name": "recipe-app-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "54a40bec"
+}
