@@ -4,7 +4,7 @@ import TabsPage from "../views/TabsPage.vue";
 const routes = [
   {
     path: "/",
-    redirect: "/tabs/tab1",
+    redirect: "/tabs/search",
   },
   {
     path: "/tabs/",
@@ -12,21 +12,33 @@ const routes = [
     children: [
       {
         path: "",
-        redirect: "/tabs/tab1",
+        redirect: "/tabs/random-recipes",
       },
       {
-        path: "tab1",
-        component: () => import("@/views/Tab1Page.vue"),
+        path: "search",
+        component: () => import("@/views/SearchRecipesPage.vue"),
       },
       {
-        path: "tab2",
-        component: () => import("@/views/Tab2Page.vue"),
+        path: "random-recipes",
+        component: () => import("@/views/RandomRecipesPage.vue"),
       },
       {
-        path: "tab3",
-        component: () => import("@/views/Tab3Page.vue"),
+        path: "meal-planner",
+        component: () => import("@/views/MealPlanPage.vue"),
+      },
+      {
+        path: "favorites",
+        component: () => import("@/views/FavoritesPage.vue"),
       },
     ],
+  },
+  {
+    path: "/recipe/:id",
+    component: () => import("@/views/RecipeDetailsPage.vue"),
+  },
+  {
+    path: "/ingredient/:id",
+    component: () => import("@/views/IngredientDetailsPage.vue"),
   },
 ];
 
