@@ -174,6 +174,6 @@ img {
 ion-icon[slot="end"] {
   margin-inline-end: 20px;
   font-size: 30px;
-  color: #ff511c;
+  color: #ff352e;
 }
 </style>

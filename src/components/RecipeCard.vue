@@ -24,12 +24,13 @@ export default {
 
 .img-wrapper {
   position: relative;
-  min-height: 175px;
+  min-height: 150px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -38,14 +39,14 @@ export default {
   width: 100%;
   bottom: 0;
   backdrop-filter: blur(3px);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .img-title {
   margin: 0;
   padding: 10px 20px;
   font-family: "Merienda", cursive;
-  font-size: 16px;
+  font-size: 14px;
   color: #eee;
   text-align: center;
   text-overflow: ellipsis;
