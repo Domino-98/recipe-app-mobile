@@ -7,6 +7,7 @@
         </ion-buttons>
         <ion-title>{{ state.recipe.title }}</ion-title>
         <ion-icon
+          data-cy="favorite"
           :icon="state.favorite ? heart : heartOutline"
           slot="end"
           @click.prevent="addToFavorites(state.recipe)"

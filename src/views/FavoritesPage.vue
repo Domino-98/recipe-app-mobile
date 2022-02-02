@@ -3,7 +3,11 @@
     <ion-header>
       <ion-toolbar>
         <ion-title
-          >Favorite recipes ({{ store.state.favoriteRecipes.length }})
+          >Favorite recipes ({{
+            store.state.favoriteRecipes
+              ? store.state.favoriteRecipes.length
+              : "0"
+          }})
         </ion-title>
       </ion-toolbar>
     </ion-header>

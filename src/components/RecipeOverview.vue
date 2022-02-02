@@ -4,15 +4,15 @@
       :src="`https://spoonacular.com/recipeImages/${recipe.id}-636x393.jpg`"
     />
     <ion-segment color="tertiary" @ionChange="changeView($event)" :value="view">
-      <ion-segment-button value="details">
+      <ion-segment-button value="details" data-cy="details">
         <ion-label>Details</ion-label>
         <ion-icon :icon="book"></ion-icon>
       </ion-segment-button>
-      <ion-segment-button value="ingredients">
+      <ion-segment-button value="ingredients" data-cy="ingredients">
         <ion-label>Ingredients</ion-label>
         <ion-icon :icon="fish"></ion-icon>
       </ion-segment-button>
-      <ion-segment-button value="steps">
+      <ion-segment-button value="steps" data-cy="steps">
         <ion-label>Steps</ion-label>
         <ion-icon :icon="list"></ion-icon>
       </ion-segment-button>

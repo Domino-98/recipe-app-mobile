@@ -3,6 +3,7 @@
     <ion-header>
       <ion-toolbar>
         <ion-searchbar
+          data-cy="searchByIngredients"
           @change="state.searchedIngredients = $event.target.value"
           @keyup.enter="searchRecipes"
           placeholder="Search recipes by ingredients"

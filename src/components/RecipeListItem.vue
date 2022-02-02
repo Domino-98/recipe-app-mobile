@@ -1,5 +1,5 @@
 <template>
-  <ion-item :router-link="`/recipe/${recipe.id}`">
+  <ion-item :router-link="`/recipe/${recipe.id}`" class="recipe-list-item">
     <ion-thumbnail slot="start">
       <img
         :src="`https://spoonacular.com/recipeImages/${recipe.id}-240x150.jpg`"

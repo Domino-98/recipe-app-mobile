@@ -3,6 +3,7 @@
     <ion-header>
       <ion-toolbar>
         <ion-searchbar
+          data-cy="generateMealPlan"
           @change="state.targetCalories = $event.target.value"
           @keyup.enter="generateMealPlan"
           placeholder="Calorie intake (e.g. 2000)"
@@ -77,10 +78,10 @@
         @ionChange="changeTimeFrame($event)"
         :value="state.timeFrame"
       >
-        <ion-segment-button value="day">
+        <ion-segment-button value="day" data-cy="day">
           <ion-label>Daily</ion-label>
         </ion-segment-button>
-        <ion-segment-button value="week">
+        <ion-segment-button value="week" data-cy="week">
           <ion-label>Weekly</ion-label>
         </ion-segment-button>
       </ion-segment>
