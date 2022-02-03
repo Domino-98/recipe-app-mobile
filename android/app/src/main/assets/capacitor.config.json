@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "recipe-app-mobile",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

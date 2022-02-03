@@ -1,5 +1,5 @@
 {
-  "name": "recipe-app-mobile",
+  "name": "ionic-recipe-app",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -15,10 +15,16 @@
     "@capacitor/core": "3.4.0",
     "@capacitor/haptics": "1.1.4",
     "@capacitor/keyboard": "1.2.1",
+    "@capacitor/share": "^1.1.1",
     "@capacitor/status-bar": "1.0.7",
+    "@capacitor/storage": "^1.2.4",
+    "@cypress/vue": "^3.1.0",
+    "@cypress/webpack-dev-server": "^1.8.0",
     "@ionic/vue": "^6.0.0",
     "@ionic/vue-router": "^6.0.0",
+    "axios": "^0.25.0",
     "core-js": "^3.6.5",
+    "dotenv": "^14.2.0",
     "vue": "^3.2.21",
     "vue-router": "^4.0.12"
   },
